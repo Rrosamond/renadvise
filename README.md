@@ -1,10 +1,11 @@
 # Renaissance Advisory Services — Website
 
-Review copy of the RAS marketing site (LIHTC development advisory).
-Single-page static site: `index.html`, `css/style.css`, `js/main.js`, images in `assets/img/`.
+Source for [renadvise.com](https://renadvise.com), the RAS marketing site (LIHTC development advisory).
+Single-page static site served by GitHub Pages from `main` (custom domain via `CNAME`).
 
-**This is a review/preview repo — it is not the live site.** The public
-landing page at renadvise.com is unchanged.
+- `index.html` — page content, meta tags, and JSON-LD structured data
+- `css/style.css`, `js/main.js` — styles and scripts
+- `assets/img/` — images (`og-image.jpg` is the 1200×630 social share preview)
+- `robots.txt`, `sitemap.xml` — crawler directives and sitemap
 
-Open `index.html` locally, or view the rendered preview via GitHub Pages
-(Settings → Pages → Deploy from branch: main / root) if enabled.
+Pushes to `main` deploy to the live site. When content changes, update `<lastmod>` in `sitemap.xml`.
