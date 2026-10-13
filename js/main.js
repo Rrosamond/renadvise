@@ -3,15 +3,18 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Mobile nav toggle
 const navToggle = document.getElementById('nav-toggle');
 const mainNav = document.getElementById('main-nav');
-navToggle.addEventListener('click', () => {
-  const isOpen = mainNav.classList.toggle('open');
-  navToggle.setAttribute('aria-expanded', isOpen);
+const setNav = (open) => {
+  mainNav.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', open);
+  navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+};
+navToggle.addEventListener('click', () => setNav(!mainNav.classList.contains('open')));
+mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setNav(false)));
+document.addEventListener('click', (e) => {
+  if (mainNav.classList.contains('open') && !e.target.closest('#site-header')) setNav(false);
 });
-mainNav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    mainNav.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', false);
-  });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && mainNav.classList.contains('open')) { setNav(false); navToggle.focus(); }
 });
 
 // Scroll reveal
