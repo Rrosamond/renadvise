@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-96X6LFB3RQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-96X6LFB3RQ');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Renaissance Advisory Services | LIHTC Development Advisory, New Orleans</title>
@@ -35,11 +27,11 @@
 <link rel="icon" href="assets/img/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" type="image/webp" href="assets/img/hero-bg.webp" fetchpriority="high">
-<link rel="stylesheet" href="css/style.css?v=12">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/fraunces-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="assets/img/hero-bg-mobile.webp" media="(max-width: 720px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="assets/img/hero-bg.webp" media="(min-width: 721px)" fetchpriority="high">
+<link rel="stylesheet" href="css/style.css?v=14">
 
 <script type="application/ld+json">
 {
@@ -109,7 +101,7 @@
 <header class="site-header" id="site-header">
   <div class="header-inner">
     <a href="#hero" class="logo-link">
-      <img src="assets/img/logo.png" alt="Renaissance Advisory Services" class="logo-img" width="900" height="278">
+      <img src="assets/img/logo.webp" alt="Renaissance Advisory Services" class="logo-img" width="544" height="168">
     </a>
     <nav class="main-nav" id="main-nav">
       <a href="#about">About</a>
@@ -128,7 +120,7 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-bg" role="img" aria-label="Affordable housing development with metal panel siding" style="background-image: url('assets/img/hero-bg.webp');"></div>
+    <div class="hero-bg" role="img" aria-label="Affordable housing development with metal panel siding"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="eyebrow">25+ Years of LIHTC Development Experience</p>
@@ -152,7 +144,7 @@
 
     <div class="service-block">
       <figure class="service-media">
-        <img src="assets/img/proj-ownersrep.webp" width="1000" height="666" alt="Affordable housing development with resident walkways" loading="lazy">
+        <img src="assets/img/proj-ownersrep.webp" srcset="assets/img/proj-ownersrep-480.webp 480w, assets/img/proj-ownersrep-750.webp 750w, assets/img/proj-ownersrep.webp 1000w" sizes="(max-width: 860px) 100vw, 440px" width="1000" height="666" alt="Affordable housing development with resident walkways" loading="lazy">
       </figure>
       <div class="service-text">
         <h3>Development Services</h3>
@@ -162,7 +154,7 @@
 
     <div class="service-block reverse">
       <figure class="service-media">
-        <img src="assets/img/proj-arts-construction.webp" width="1000" height="666" alt="Arts Senior Apartments under construction, wood framing rising over the masonry" loading="lazy">
+        <img src="assets/img/proj-arts-construction.webp" srcset="assets/img/proj-arts-construction-480.webp 480w, assets/img/proj-arts-construction-750.webp 750w, assets/img/proj-arts-construction.webp 1000w" sizes="(max-width: 860px) 100vw, 440px" width="1000" height="666" alt="Arts Senior Apartments under construction, wood framing rising over the masonry" loading="lazy">
       </figure>
       <div class="service-text">
         <h3>Owner&rsquo;s Representation</h3>
@@ -172,7 +164,7 @@
 
     <div class="service-block">
       <figure class="service-media">
-        <img src="assets/img/proj-arts-overhead.webp" width="1000" height="667" alt="Aerial view of the Arts Senior Apartments site" loading="lazy">
+        <img src="assets/img/proj-arts-overhead.webp" srcset="assets/img/proj-arts-overhead-480.webp 480w, assets/img/proj-arts-overhead-750.webp 750w, assets/img/proj-arts-overhead.webp 1000w" sizes="(max-width: 860px) 100vw, 440px" width="1000" height="667" alt="Aerial view of the Arts Senior Apartments site" loading="lazy">
       </figure>
       <div class="service-text">
         <h3>Residual Consultancy</h3>
@@ -191,7 +183,7 @@
     <div class="work-grid">
       <article class="work-card">
         <div class="work-img">
-          <img src="assets/img/proj-arts-aerial.webp" width="1000" height="666" alt="Aerial view of Arts Senior Apartments, a LIHTC senior housing community in New Orleans" loading="lazy">
+          <img src="assets/img/proj-arts-aerial.webp" srcset="assets/img/proj-arts-aerial-480.webp 480w, assets/img/proj-arts-aerial-750.webp 750w, assets/img/proj-arts-aerial.webp 1000w" sizes="(max-width: 860px) 100vw, 570px" width="1000" height="666" alt="Aerial view of Arts Senior Apartments, a LIHTC senior housing community in New Orleans" loading="lazy">
         </div>
         <div class="work-body">
           <h3>Arts Senior Apartments</h3>
@@ -201,7 +193,7 @@
 
       <article class="work-card">
         <div class="work-img">
-          <img src="assets/img/proj-tiger-exterior.webp" width="1000" height="666" alt="Exterior of Tiger Island Senior Apartments, affordable senior housing in Morgan City, Louisiana" loading="lazy">
+          <img src="assets/img/proj-tiger-exterior.webp" srcset="assets/img/proj-tiger-exterior-480.webp 480w, assets/img/proj-tiger-exterior-750.webp 750w, assets/img/proj-tiger-exterior.webp 1000w" sizes="(max-width: 860px) 100vw, 570px" width="1000" height="666" alt="Exterior of Tiger Island Senior Apartments, affordable senior housing in Morgan City, Louisiana" loading="lazy">
         </div>
         <div class="work-body">
           <h3>Tiger Island Senior Apartments</h3>
@@ -211,7 +203,7 @@
 
       <article class="work-card">
         <div class="work-img">
-          <img src="assets/img/proj-oldschool.webp" width="1000" height="667" alt="Old School Senior Apartments, a historic schoolhouse renovated into affordable apartments" loading="lazy">
+          <img src="assets/img/proj-oldschool.webp" srcset="assets/img/proj-oldschool-480.webp 480w, assets/img/proj-oldschool-750.webp 750w, assets/img/proj-oldschool.webp 1000w" sizes="(max-width: 860px) 100vw, 570px" width="1000" height="667" alt="Old School Senior Apartments, a historic schoolhouse renovated into affordable apartments" loading="lazy">
         </div>
         <div class="work-body">
           <h3>Old School Senior Apartments</h3>
@@ -221,7 +213,7 @@
 
       <article class="work-card">
         <div class="work-img">
-          <img src="assets/img/proj-bastion.webp" width="1000" height="666" alt="Bastion Community, an affordable housing development in New Orleans" loading="lazy">
+          <img src="assets/img/proj-bastion.webp" srcset="assets/img/proj-bastion-480.webp 480w, assets/img/proj-bastion-750.webp 750w, assets/img/proj-bastion.webp 1000w" sizes="(max-width: 860px) 100vw, 570px" width="1000" height="666" alt="Bastion Community, an affordable housing development in New Orleans" loading="lazy">
         </div>
         <div class="work-body">
           <h3>Bastion Community</h3>
@@ -260,7 +252,7 @@
 
   <!-- CLOSING CTA -->
   <section class="cta" id="contact">
-    <div class="cta-bg" style="background-image: url('assets/img/cta-bg.webp');"></div>
+    <div class="cta-bg"></div>
     <div class="cta-overlay"></div>
     <div class="cta-content">
       <h2>We help developers, lenders, and investors get affordable housing deals across the finish line &mdash; from allocation to exit.</h2>
@@ -277,16 +269,16 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="assets/img/logo.png" alt="Renaissance Advisory Services" class="footer-logo" width="900" height="278" loading="lazy">
+      <img src="assets/img/logo.webp" alt="Renaissance Advisory Services" class="footer-logo" width="544" height="168" loading="lazy">
       <p class="footer-tagline">From Allocation to Disposition</p>
     </div>
     <div class="footer-cols">
       <div class="footer-col">
-        <h4>Office</h4>
+        <h3>Office</h3>
         <address>2600 Gravier St, 7th Floor<br>New Orleans, LA 70119</address>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <p><a href="mailto:David@renadvise.com">David@renadvise.com</a></p>
         <p><a href="mailto:Robert@renadvise.com">Robert@renadvise.com</a></p>
       </div>
@@ -298,5 +290,18 @@
 </footer>
 
 <script src="js/main.js"></script>
+<!-- Google tag (gtag.js), loaded after page load to keep it off the critical path -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-96X6LFB3RQ');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-96X6LFB3RQ';
+    document.head.appendChild(s);
+  });
+</script>
 </body>
 </html>
