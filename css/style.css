@@ -42,7 +42,9 @@ p { margin: 0; }
 
 a { color: inherit; text-decoration: none; }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
+
+address { font-style: normal; }
 
 section { position: relative; }
 
@@ -452,7 +454,8 @@ section { position: relative; }
   margin-bottom: 0.9rem;
 }
 
-.footer-col p {
+.footer-col p,
+.footer-col address {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
